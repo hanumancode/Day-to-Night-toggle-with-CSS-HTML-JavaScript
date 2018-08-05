@@ -20,11 +20,33 @@ body {
 .toggle:before {
     content: '';
     position: absolute;
-    top: 1px;
+    top: 2px;
     left: 2px;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     background: #262626;
     border-radius: 50%;
     transition: 0.5s;
+}
+.toggle.active:before{
+    left: 25px;
+}
+
+body.dark {
+    background: #262626;
+    transition: 0.8s;
+}
+
+h2 {
+	text-align: center;
+	font-size: 150px;
+	color: #000;
+	font-family: arial;
+	font-weight: bold;
+	transition: .5s;
+	text-transform: uppercase;
+	margin-top: 15%;
+}
+h2.dark {
+    color: #f0c420;
 }
